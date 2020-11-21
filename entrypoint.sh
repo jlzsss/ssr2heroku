@@ -21,7 +21,7 @@ cat > /ssrbin/config.json <<EOF
         "server": "${APP_SITE}",
         "server_port": 443,
         "listen_address": "0.0.0.0",
-        "listen_port": 5473
+        "listen_port": 1080
     },
 
     "over_tls_settings": {
