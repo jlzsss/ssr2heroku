@@ -1,10 +1,10 @@
 cat > /ssrbin/config.json <<EOF
 {
     "password": "${PASSWORD}",
-    "method": "aes-128-ctr",
-    "protocol": "origin",
+    "method": "chacha20-ietf",
+    "protocol": "auth_aes128_sha1",
     "protocol_param": "",
-    "obfs": "plain",
+    "obfs": "tls1.2_ticket_fastauth",
     "obfs_param": "",
 
     "udp": true,
@@ -21,7 +21,7 @@ cat > /ssrbin/config.json <<EOF
         "server": "${APP_SITE}",
         "server_port": 443,
         "listen_address": "0.0.0.0",
-        "listen_port": 1080
+        "listen_port": 5473
     },
 
     "over_tls_settings": {
