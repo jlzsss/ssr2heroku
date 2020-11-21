@@ -1,10 +1,10 @@
 cat > /ssrbin/config.json <<EOF
 {
     "password": "${PASSWORD}",
-    "method": "chacha20-ietf",
-    "protocol": "origin",
+    "method": "chacha20",
+    "protocol": "auth_aes128_md5",
     "protocol_param": "",
-    "obfs": "plain",
+    "obfs": "tls1.2_ticket_fastauth",
     "obfs_param": "",
 
     "udp": true,
