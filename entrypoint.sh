@@ -1,7 +1,7 @@
 cat > /ssrbin/config.json <<EOF
 {
     "password": "${PASSWORD}",
-    "method": "chacha20-ietf",
+    "method": "aes-256-cfb",
     "protocol": "auth_aes128_sha1",
     "protocol_param": "",
     "obfs": "tls1.2_ticket_fastauth",
