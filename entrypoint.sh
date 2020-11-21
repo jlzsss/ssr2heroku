@@ -1,7 +1,7 @@
 cat > /ssrbin/config.json <<EOF
 {
     "password": "${PASSWORD}",
-    "method": "chacha20-ietf",
+    "method": "aes-128-ctr",
     "protocol": "origin",
     "protocol_param": "",
     "obfs": "plain",
